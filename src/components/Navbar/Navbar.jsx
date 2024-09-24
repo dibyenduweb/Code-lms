@@ -6,7 +6,7 @@ const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <nav className="bg-green-100 fixed w-full z-10 top-0 shadow-md ">
+    <nav className="bg-green-100 fixed w-full z-20 top-0 shadow-md ">
       <div className="max-w-screen-xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between h-16">
           <div className="flex-shrink-0 flex items-center">
@@ -22,11 +22,11 @@ const Navbar = () => {
               />
               <FiSearch className="absolute right-2 top-2 text-gray-500" size={20} />
             </div>
-            <a href="#" className="text-gray-800 hover:text-green-600">Home</a>
-            <a href="#" className="text-gray-800 hover:text-green-600">Courses</a>
-            <a href="#" className="text-gray-800 hover:text-green-600">Pages</a>
-            <a href="#" className="text-gray-800 hover:text-green-600">About</a>
-            <a href="#" className="bg-green-600 text-white px-4 py-2 rounded-md">Sign in</a>
+            <a href="/" className="text-gray-800 hover:text-green-600">Home</a>
+            <a href="/course" className="text-gray-800 hover:text-green-600">Courses</a>
+            <a href="#" className="text-gray-800 hover:text-green-600">Blogs</a>
+            <a href="#" className="text-gray-800 hover:text-green-600">Notice</a>
+            <a href="/account" className="bg-green-600 text-white px-4 py-2 rounded-md">Sign in</a>
           </div>
           {/* Hamburger Menu for Mobile */}
           <div className="flex items-center md:hidden">
@@ -59,7 +59,7 @@ const Navbar = () => {
               placeholder="Search courses"
               className="border rounded w-full px-2 py-1 focus:outline-none"
             />
-            <a href="#" className="block text-gray-800 hover:bg-green-100 px-3 py-2 rounded-md">
+            <a href="/" className="block text-gray-800 hover:bg-green-100 px-3 py-2 rounded-md">
               Home
             </a>
             <a href="#" className="block text-gray-800 hover:bg-green-100 px-3 py-2 rounded-md">
@@ -80,5 +80,6 @@ const Navbar = () => {
     </nav>
   );
 };
-
 export default Navbar;
+
+
